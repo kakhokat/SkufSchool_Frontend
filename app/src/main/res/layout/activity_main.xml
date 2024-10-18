@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20sp"
+        android:orientation="vertical"
+        android:padding="10sp">
+
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:text="SkufSchool"
+            android:textAlignment="center"
+            android:textColor="@color/title"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            app:srcCompat="@drawable/img" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_border_light"
+            android:drawablePadding="8dp"
+            android:hint="Логин"
+            android:padding="8dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_border_light"
+            android:drawablePadding="8dp"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button_border"
+            android:text="Вход"
+            android:textAllCaps="false"
+            android:textColor="@color/title_light"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
